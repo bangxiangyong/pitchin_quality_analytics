@@ -1,3 +1,9 @@
 [submodule "baetorch"]
 	path = baetorch
 	url = https://github.com/bangxiangyong/baetorch
+[submodule "agentMET4FOF"]
+	path = agentMET4FOF
+	url = https://github.com/bangxiangyong/agentMET4FOF
+[submodule "agentMET4FOF_ml_extension"]
+	path = agentMET4FOF_ml_extension
+	url = https://github.com/bangxiangyong/agentMET4FOF_ml_extension
