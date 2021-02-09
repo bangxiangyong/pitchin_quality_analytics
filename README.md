@@ -1,6 +1,6 @@
 # Multi Agent System and Bayesian Autoencoders for Quality Control in Manufacturing
 
-This demonstrator is part of the Pitch-in project which demonstrates the use of distributed learning for quality control in manufacturing.
+This demonstrator is part of the Pitch-in project (https://pitch-in.ac.uk/) which demonstrates the use of distributed learning for quality control in manufacturing.
 - We have developed a multi-agent system for a reconfigurable data pipeline and at the core of it, we employ the Bayesian Autoencoder, a novel deep learning algorithm which we have developed for quantifying uncertainty.
 - We use the dataset from a real production line at Detroit, Michigan provided by Liveline Technologies. It is available at https://www.kaggle.com/supergus/multistage-continuousflow-manufacturing-process?select=notes_on_dataset.txt 
 - To develop the demonstrator, we use the package `agentMET4FOF` (https://agentmet4fof.readthedocs.io/en/latest/)
