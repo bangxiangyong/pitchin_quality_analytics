@@ -13,7 +13,10 @@ This demonstrator is part of the Pitch-in project which demonstrates the use of 
 
 ## Screenshots
 
-
+![Alt text](screenshots/page1.PNG?raw=true "Agent network pipeline")
+![Alt text](screenshots/page2.PNG?raw=true "Log-likelihood of machines and parameters")
+![Alt text](screenshots/page3.PNG?raw=true "Total log-likelihood for each product")
+![Alt text](screenshots/page4.PNG?raw=true "ML experiment page in selecting best models")
 
 
 ## Acknowledgement 
