@@ -57,13 +57,13 @@ class Liveline_DatastreamAgent(ML_DatastreamAgent):
                                                   input_stage=input_stage,
                                                   train_size=train_size)
         self.datastream = liveline_datastream
-        self.x_train = liveline_datastream.quantities["train"]
-        self.x_test = liveline_datastream.quantities["test"]
-        self.x_ood = liveline_datastream.quantities["ood"]
+        self.x_train = liveline_datastream._quantities["train"]
+        self.x_test = liveline_datastream._quantities["test"]
+        self.x_ood = liveline_datastream._quantities["ood"]
 
-        self.y_train = liveline_datastream.quantities["train"]
-        self.y_test = liveline_datastream.quantities["test"]
-        self.y_ood = liveline_datastream.quantities["ood"]
+        self.y_train = liveline_datastream._target["train"]
+        self.y_test = liveline_datastream._target["test"]
+        self.y_ood = liveline_datastream._target["ood"]
 
         # for simulation
         self.datastream_simulate = DataStreamMET4FOF()

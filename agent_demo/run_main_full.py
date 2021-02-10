@@ -3,6 +3,7 @@ from agentMET4FOF_ml_extension.agentMET4FOF.agentMET4FOF.agents import AgentNetw
 from agentMET4FOF_ml_extension.agentMET4FOF_ml_extension.Dashboard_ml_exp import Dashboard_ML_Experiment
 
 import agent_demo.agents as pitchin_agents
+from agentMET4FOF_ml_extension.agentMET4FOF_ml_extension.ML_Experiment import add_ml_experiment
 from util.plotting import plot_total_nll
 import random
 
@@ -46,8 +47,8 @@ def main():
     postproc_agent2.bind_output(monitor_agent)
 
     # add ML Experiment
-    agentNetwork.add_ml_experiment(name="Process-Stage-1("+likelihood+")", agents=[machine_agent1,bae_agent1,evaluate_agent1], random_seed=random.randint(1,1000))
-    agentNetwork.add_ml_experiment(name="Process-Stage-2("+likelihood+")", agents=[machine_agent2,bae_agent2,evaluate_agent2], random_seed=random.randint(1,1000))
+    add_ml_experiment(agentNetwork, name="Process-Stage-1("+likelihood+")", agents=[machine_agent1,bae_agent1,evaluate_agent1], random_seed=random.randint(1,1000))
+    add_ml_experiment(agentNetwork, name="Process-Stage-2("+likelihood+")", agents=[machine_agent2,bae_agent2,evaluate_agent2], random_seed=random.randint(1,1000))
 
     # set agent state to running
     agentNetwork.set_running_state()
